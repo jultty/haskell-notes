@@ -16,7 +16,7 @@ common warnings
 executable haskell-notes
     import:           warnings
     main-is:          Main.hs
-    -- other-modules:
+    other-modules:    HelsinkiMooc.H1_3_1_Features,
     -- other-extensions:
     build-depends:    base ^>=4.17.2.1
     hs-source-dirs:   app

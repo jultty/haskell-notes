@@ -1,7 +1,10 @@
+module HelsinkiMooc.H1_3_1_Features where
+
 -- 1.3.1 Features
 -- https://haskell.mooc.fi/part1#features
 
-main = do
+h1_3_1 :: IO ()
+h1_3_1 = do
   -- Higher-order functions
   print (map length ["123", "123456"]) -- [3,6]
 

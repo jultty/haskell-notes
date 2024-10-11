@@ -77,3 +77,23 @@ h1_6 :: IO ()
 h1_6 = do
   print(f 2 x) -- 5
   print (typeOf s1 == typeOf s2) -- True
+
+-- 1.7 The Structure of a Haskell Program
+-- https://haskell.mooc.fi/part1#the-structure-of-a-haskell-program
+
+-- Each Haskell file is a module
+-- A Name.hs modules' first line would be 'module Name where'
+
+-- Unlike variables, functions have arguments to the left of the equation
+g :: Double -> Double
+g i = 1 / i
+
+-- The operator for exponentiation is ^
+powerOf :: Float -> Int -> Float
+powerOf b e = b^e
+
+h1_7 :: IO ()
+h1_7 = do
+  print $ g 0 -- Infinity
+  print $ g 2 -- 0.5
+  print $ powerOf 4 2 -- 16.0

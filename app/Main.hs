@@ -1,11 +1,12 @@
 module Main where
 import HelsinkiMooc.H1
+import HelsinkiMooc.H2
 import Spare.SystemIO (main)
 import Spare.TenMinutes (main)
 
 main :: IO ()
 main = do
-  h1_9
+  h2_1
 
 cold :: IO ()
 cold = do
@@ -16,3 +17,4 @@ cold = do
   h1_6
   h1_7
   h1_8
+  h1_9

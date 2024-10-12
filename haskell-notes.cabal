@@ -19,6 +19,7 @@ executable haskell-notes
     other-modules:    Spare.TenMinutes,
                       Spare.SystemIO,
                       HelsinkiMooc.H1,
+                      HelsinkiMooc.H2,
     -- other-extensions:
     build-depends:    base ^>=4.17.2.1,
                       process, text,

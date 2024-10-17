@@ -35,7 +35,64 @@ fibonacci' :: Integer -> Integer -> Integer -> Integer
 fibonacci' _ b 1 = b
 fibonacci' a b n = fibonacci' b (a+b) (n-1)
 
+-- fibonacci 5
+-- ( f' 0 1 5 )
+--   ( f' 1 1 4 )
+--     ( f' 1 2 3 )
+--       ( f' 2 3 2 )
+--         ( f' 3 5 1 )
+--           5
+-- 1  2  3  4  5 (c, reversed)
+-- 0  1, 1, 2, 3 (a)
+-- 1, 1, 2, 3, 5 (b)
+
 h2_1 :: IO ()
 h2_1 = do
   putStrLn $ repeatString 3 "one " -- "one one one "
   print $ fibonacci 5 -- 5
+  print $ fibonacci 8 -- 21
+
+-- 2.2 Guards
+-- https://haskell.mooc.fi/part1#guards
+
+describe :: Int -> String
+describe n
+  | n == 2      = "Two"
+  | even n      = "Even"
+  | n == 3      = "Three"
+  | n > 100     = "Big!"
+  | otherwise   = "The number " ++ show n
+
+gfactorial :: Int -> Int
+gfactorial n
+  | n < 0     = -1
+  | n == 0    = 1
+  | otherwise = n * gfactorial (n-1)
+
+-- Sometimes guards can replace pattern matching,
+-- and they can also be combined:
+guessAge :: String -> Int -> String
+guessAge "Griselda" age
+  | age < 47  = "Too low!"
+  | age > 47  = "Too high!"
+  | otherwise = "Correct!"
+guessAge "Hansel" age
+  | age < 12  = "Too low!"
+  | age > 12  = "Too high!"
+  | otherwise = "Correct!"
+guessAge _ _ = "Wrong name!"
+
+h2_2 :: IO ()
+h2_2 = do
+  print $ describe 38 -- "Even"
+  print $ gfactorial 5 -- 120
+  print $ guessAge "Griselda" 33
+  print $ guessAge "Hansel" 20
+  print $ guessAge "Hansel" 12
+
+-- 2.3 Lists
+-- https://haskell.mooc.fi/part1#lists
+
+h2_3 :: IO ()
+h2_3 = do
+  print "Hello, 2.3"

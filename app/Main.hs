@@ -6,7 +6,7 @@ import Spare.TenMinutes (main)
 
 main :: IO ()
 main = do
-  h2_1
+  h2_3
 
 cold :: IO ()
 cold = do
@@ -18,3 +18,5 @@ cold = do
   h1_7
   h1_8
   h1_9
+  h2_1
+  h2_2

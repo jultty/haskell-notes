@@ -18,8 +18,11 @@ executable haskell-notes
     main-is:          Main.hs
     other-modules:    Spare.TenMinutes,
                       Spare.SystemIO,
+                      Spare.TypeDefaults,
                       HelsinkiMooc.H1,
                       HelsinkiMooc.H2,
+                      AllenMoronuki.Chapter02,
+                      AllenMoronuki.Chapter03,
     -- other-extensions:
     build-depends:    base ^>=4.17.2.1,
                       process, text,

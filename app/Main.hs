@@ -3,10 +3,12 @@ import HelsinkiMooc.H1
 import HelsinkiMooc.H2
 import Spare.SystemIO (main)
 import Spare.TenMinutes (main)
+import AllenMoronuki.Chapter02
+import AllenMoronuki.Chapter03
 
 main :: IO ()
 main = do
-  h2_3
+  c3
 
 cold :: IO ()
 cold = do
@@ -20,3 +22,4 @@ cold = do
   h1_9
   h2_1
   h2_2
+  c2

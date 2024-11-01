@@ -5,10 +5,11 @@ import Spare.SystemIO (main)
 import Spare.TenMinutes (main)
 import AllenMoronuki.Chapter02
 import AllenMoronuki.Chapter03
+import AllenMoronuki.Chapter04
 
 main :: IO ()
 main = do
-  c3
+  c4
 
 cold :: IO ()
 cold = do
@@ -23,3 +24,4 @@ cold = do
   h2_1
   h2_2
   c2
+  c3

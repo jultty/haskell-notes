@@ -23,6 +23,7 @@ executable haskell-notes
                       HelsinkiMooc.H2,
                       AllenMoronuki.Chapter02,
                       AllenMoronuki.Chapter03,
+                      AllenMoronuki.Chapter04,
     -- other-extensions:
     build-depends:    base ^>=4.17.2.1,
                       process, text,
